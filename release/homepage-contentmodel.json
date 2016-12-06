@@ -1,0 +1,95 @@
+{
+	"heroBanner": {
+		"imageUrl": "http://longislandlymedisease.com/wp-content/uploads/2014/12/Lyme-Disease-Lab-Testing-1024x667.jpg",
+		"altText": "Labizy Hero Banner",
+		"actionButton": "true",
+		"imageClick": "false",
+		"redirectToPage": "/lab-tests/v1/all?offset=0&limit=20&sortby=popularity"
+	},
+	"mostPopularLabTests": {
+		"labTests": [{
+			"id": "1001",
+			"labIds": ["lab-1001", "lab-1002", "lab-1003", "lab-1004"],
+			"type": "ThyroidTest",
+			"name": "Thyroid Profile",
+			"freeText": "Thyroid Profile Test",
+			"tags": "Thyroid Profile Test",
+			"actionButton": "true",
+			"redirectToPage": "/lab-tests/v1/1001?offset=0&limit=20&sortby=popularity"
+		}, {
+			"id": "1002",
+			"labIds": ["lab-1001", "lab-1002", "lab-1003", "lab-1004"],
+			"type": "LipidTest",
+			"name": "Lipid Profile",
+			"freeText": "Thyroid Profile Test",
+			"tags": "Thyroid Profile Test",
+			"actionButton": "true",
+			"redirectToPage": "/lab-tests/v1/1002?offset=0&limit=20&sortby=popularity"
+		}, {
+			"id": "1003",
+			"labIds": ["lab-1001", "lab-1002", "lab-1003", "lab-1004"],
+			"type": "LiverTest",
+			"name": "Liver Function Test",
+			"freeText": "Thyroid Profile Test",
+			"tags": "Thyroid Profile Test",
+			"actionButton": "true",
+			"redirectToPage": "/lab-tests/v1/1003?offset=0&limit=20&sortby=popularity"
+		}, {
+			"id": "1004",
+			"labIds": ["lab-1001", "lab-1002", "lab-1003", "lab-1004"],
+			"type": "KidneyTest",
+			"name": "Kidney Function Test",
+			"freeText": "Thyroid Profile Test",
+			"tags": "Thyroid Profile Test",
+			"actionButton": "true",
+			"redirectToPage": "/lab-tests/v1/1004?offset=0&limit=20&sortby=popularity"
+		}]
+	},
+	"ourPartnerLabs": {
+		"labs": [{
+			"id": "lab-1001",
+			"type": "DiagnosticCenter",
+			"name": "Thyroid Profile",
+			"image": {
+				"imageUrl": "http://longislandlymedisease.com/wp-content/uploads/2014/12/Lyme-Disease-Lab-Testing-1024x667.jpg",
+				"altText": "Labizy Hero Banner",
+				"actionButton": "true",
+				"imageClick": "false",
+				"redirectToPage": "/lab-tests/v1/labs/lab-1001?offset=0&limit=20&sortby=popularity"
+			}
+		}, {
+			"id": "lab-1002",
+			"type": "Pathology",
+			"name": "Lipid Profile",
+			"image": {
+				"imageUrl": "http://longislandlymedisease.com/wp-content/uploads/2014/12/Lyme-Disease-Lab-Testing-1024x667.jpg",
+				"altText": "Labizy Hero Banner",
+				"actionButton": "true",
+				"imageClick": "false",
+				"redirectToPage": "/lab-tests/v1/labs/lab-1002?offset=0&limit=20&sortby=popularity"
+			}
+		}, {
+			"id": "lab-1003",
+			"type": "Hospital",
+			"name": "Liver Function Test",
+			"image": {
+				"imageUrl": "http://longislandlymedisease.com/wp-content/uploads/2014/12/Lyme-Disease-Lab-Testing-1024x667.jpg",
+				"altText": "Labizy Hero Banner",
+				"actionButton": "true",
+				"imageClick": "false",
+				"redirectToPage": "/lab-tests/v1/labs/lab-1003?offset=0&limit=20&sortby=popularity"
+			}
+		}, {
+			"id": "lab-1004",
+			"type": "MultiSpecialityClinic",
+			"name": "Kidney Function Test",
+			"image": {
+				"imageUrl": "http://longislandlymedisease.com/wp-content/uploads/2014/12/Lyme-Disease-Lab-Testing-1024x667.jpg",
+				"altText": "Labizy Hero Banner",
+				"actionButton": "true",
+				"imageClick": "false",
+				"redirectToPage": "/lab-tests/v1/labs/lab-1004?offset=0&limit=20&sortby=popularity"
+			}
+		}]
+	}
+}
