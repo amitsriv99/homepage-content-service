@@ -17,9 +17,10 @@ Q. How do I access the service?
 
 Ans. The below RESTful endpoint URLs
 > - To check whether the service is in healthy state or not
-     http://<hostname>:<port>/homepage-content-service-1.0.0/_status
+     
+          http://<hostname>:<port>/homepage-content-service-1.0.0/_status
 
 > - To access the content model for the homepage
-     http://<hostname>:<port>/homepage-content-service-1.0.0/homepage/v1/content-model
-          
-     Note: Pass a valid X-OAUTH-TOKEN
+     
+          http://<hostname>:<port>/homepage-content-service-1.0.0/homepage/v1/content-model
+          Note: Pass a valid X-OAUTH-TOKEN
