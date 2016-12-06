@@ -16,7 +16,6 @@ Ans. The below steps for deploying the service in Tomcat webserver:
 Q. How do I access the service?
 
 Ans. The below RESTful endpoint URLs
-
 > - To check whether the service is in healthy state or not
      http://<hostname>:<port>/homepage-content-service-1.0.0/_status
 
