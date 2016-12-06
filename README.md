@@ -7,7 +7,7 @@ Ans. The below steps for deploying the service in Tomcat webserver:
 > - Drop the .war file in the /webapps folder of your webserver
 > - Set the following JAVA_OPTS in the webserver catalina.bat/catalina.sh script
      
-     -Denviron=prod -Dhomepage.content.repository=D:\datafiles
+          -Denviron=prod -Dhomepage.content.repository=D:\datafiles
      
 > - Go to the /release folder and grab the homepage-contentmodel.json file. 
 > - Drop the homepage-contentmodel.json file in the D:\datafiles folder
