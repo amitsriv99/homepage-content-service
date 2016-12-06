@@ -13,7 +13,7 @@ Ans. The below steps for deploying the service in Tomcat webserver:
 > - Drop the homepage-contentmodel.json file in the D:\datafiles folder
 > - Start/Restart the webserver
 
-Q. How do I access the service?
+Q. How to access the service?
 
 Ans. The below RESTful endpoint URLs
 > - To check whether the service is in healthy state or not
