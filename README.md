@@ -1,17 +1,17 @@
 # homepage-content-service
 
-Q. How to set-up the .war file in the webserver?
+Q. How to set-up the webserver and deploy the service?
 
 Ans. The below steps for deploying the service in Tomcat webserver:
 > - Go to the /release folder and grab the .war file. 
-> - Drop the .war file in the webapps folder in your webserver
-> - Set the following JAVA_OPTS in the webserver start-up scripts
+> - Drop the .war file in the /webapps folder of your webserver
+> - Set the following JAVA_OPTS in the webserver catalina.bat/catalina.sh script
      
      -Denviron=prod -Dhomepage.content.repository=D:\datafiles
      
 > - Go to the /release folder and grab the homepage-contentmodel.json file. 
 > - Drop the homepage-contentmodel.json file in the D:\datafiles folder
-> - Start the webserver
+> - Start/Restart the webserver
 
 Q. How do I access the service?
 
