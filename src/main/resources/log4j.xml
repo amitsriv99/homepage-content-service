@@ -14,7 +14,7 @@
 	   <param name="append" value="false" />
 	   <param name="maxFileSize" value="10MB" />
 	   <param name="maxBackupIndex" value="10" />
-	   <param name="file" value="${catalina.home}/logs/login-profile-service-app.log" />
+	   <param name="file" value="${catalina.home}/logs/homepage-content-service-app.log" />
 	   <layout class="org.apache.log4j.PatternLayout">
 		<param name="ConversionPattern" 
 			value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
@@ -25,7 +25,7 @@
 	   <param name="append" value="false" />
 	   <param name="maxFileSize" value="10MB" />
 	   <param name="maxBackupIndex" value="5" />
-	   <param name="file" value="${catalina.home}/logs/login-profile-service-trace.log" />
+	   <param name="file" value="${catalina.home}/logs/homepage-content-service-trace.log" />
 	   <layout class="org.apache.log4j.PatternLayout">
 		<param name="ConversionPattern" 
 			value="%d{yyyy-MM-dd HH:mm:ss} [%t]:[%X{CLIENT_TRACE_ID}] %-5p %c{1}:%L - %m%n" />

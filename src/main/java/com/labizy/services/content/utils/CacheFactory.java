@@ -30,7 +30,7 @@ public class CacheFactory {
 
 	public CacheFactory(int cacheMaxAgeInMinutes) {
 		if(logger.isInfoEnabled()){
-			logger.info("Inside IdentityOAuthCacheFactory c'tor");
+			logger.info("Inside CacheFactory c'tor");
 		}
 
 		if((cacheMaxAgeInMinutes <= 0) || (cacheMaxAgeInMinutes > 60)){

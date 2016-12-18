@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.labizy.services.content.beans.ContentModelBean;
 import com.labizy.services.content.beans.StatusBean;
+import com.labizy.services.content.exceptions.ContentModelNotFoundException;
 import com.labizy.services.content.utils.CacheFactory;
 import com.labizy.services.content.utils.Constants;
 
@@ -73,6 +74,12 @@ public class HomepageContentServiceController {
 		} else{
 			try {
 				contentModelBean = cacheFactory.getCachedObject(cacheKey, cacheKeyType);
+			} catch(ContentModelNotFoundException e){
+				appLogger.error("Caught Exception {}", e);
+
+				contentModelBean = new ContentModelBean();
+				contentModelBean.setErrorCode(Integer.toString(HttpServletResponse.SC_NOT_FOUND));
+				contentModelBean.setErrorDescription(e.getMessage());
 			} catch (Exception e){
 				appLogger.error("Caught Unknown Exception {}", e);
 				errorDescription = errorDescription + "\n" + e.getMessage();
@@ -84,7 +91,11 @@ public class HomepageContentServiceController {
 					
 					httpServletResponse.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 				}else{
-					httpServletResponse.setStatus(HttpServletResponse.SC_OK);
+					if(StringUtils.isEmpty(contentModelBean.getErrorCode())){
+						httpServletResponse.setStatus(HttpServletResponse.SC_OK);
+					}else{
+						httpServletResponse.setStatus(Integer.parseInt(contentModelBean.getErrorCode()));
+					}
 				}
 			}
 		}
